@@ -29,6 +29,7 @@ function Event() {
     const navigate = useNavigate();
     const locationState = useLocation();
     const { token, url } = useContext(tokenContext)
+   
     const [updateEvent, setUpdateEvent] = useState(false)
     const [eventId, setEventId] = useState('');
     async function submit(e) {
@@ -119,7 +120,7 @@ function Event() {
     useEffect((e) => {
         setLogin(locationState.state.login);
         setUpdateEvent(locationState.state.update)
-
+         console.log(token)
         setEventId(locationState.state.eventId)
         fetchData(e)
         if (!updateEvent) return;
