@@ -46,8 +46,7 @@ function Event() {
                 toast.success(data.message, {
                     className: "my-toast"
                 })
-            }
-            setEvent({
+                  setEvent({
                 name: '',
                 organizationName: '',
                 date: '',
@@ -56,6 +55,9 @@ function Event() {
                 contactNumber: '',
                 bannerUrl: ''
             })
+            }
+            
+          
 
 
         } catch (error) {
