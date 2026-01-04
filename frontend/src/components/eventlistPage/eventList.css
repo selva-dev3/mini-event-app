@@ -1,0 +1,239 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #8A3FFC, #1E3C72);
+}
+
+.event-h1 {
+    display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.table-container .add-event{
+    position: relative;
+     width: 100px;
+     left: 400px;
+     top: 30px;
+    height: 40px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #0c2eec, #3a3dfa);
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.table-container .add-event:hover{
+    background: linear-gradient(135deg, #8A3FFC, #1E3C72);
+
+}
+.event-h1 h1 {
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    font-size: 50px;
+}
+
+.table-container {
+    position: absolute;
+    top: 300px;
+}
+
+.container table {
+    width: 800px;
+    background: linear-gradient(135deg, #8A3FFC, #1E3C72);
+    color: white;
+    font-size: 20px;
+    border-collapse: collapse;
+    border: #010003 2px solid;
+
+}
+
+.table-container button {
+
+    cursor: pointer;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    border-radius: 6px;
+}
+
+.update {
+    background: linear-gradient(135deg, #0ce242, #7fb482);
+    width: 70px;
+    height: 30px;
+    color: white;
+}
+
+.delete {
+    background: linear-gradient(135deg, #eb0b1d, #d40f0f);
+    width: 70px;
+    height: 30px;
+    color: white;
+}
+
+.delete:hover {
+    background: linear-gradient(135deg, #eb0b1d, #f56565);
+
+}
+
+.update:hover {
+
+    background: linear-gradient(135deg, #0ce242, #00ff0d);
+
+}
+
+.loading {
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+    position: relative;
+    top: 100px;
+}
+
+
+@media (max-width: 603px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+   .table-container .add-event {
+    position: relative;
+    left: 70px;
+     width: 70px;
+    height: 30px;
+    font-size: 10px;
+    font-weight: lighter    ;
+    border-radius: 50px
+
+   }
+
+    .event-h1 h1 {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        font-size: 30px;
+    }
+
+    .table-container {
+        position: absolute;
+        top: 200px;
+        width: 220px;
+    }
+
+    .container table {
+        width: 220px;
+        background: linear-gradient(135deg, #8A3FFC, #1E3C72);
+        color: white;
+        font-size: 12px;
+        border-collapse: collapse;
+        border: #010003 2px solid;
+        position: relative;
+        left: -150px;
+
+    }
+
+    th,
+    td {
+        border: 1px solid gray;
+        padding: 2px;
+        text-align: left;
+    }
+
+    th {
+        font-size: 11px;
+    }
+
+    td {
+        font-size: 12px;
+    }
+
+    .update {
+        width: 40px;
+        height: 20px;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .delete {
+        width: 40px;
+        height: 20px;
+        font-size: 9px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 603px) and (max-width: 992px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .event-h1 h1 {
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        font-size: 40px;
+    }
+
+    .container table {
+        width: 260px;
+        background: linear-gradient(135deg, #8A3FFC, #1E3C72);
+        color: white;
+        font-size: 12px;
+        border-collapse: collapse;
+        border: #010003 2px solid;
+        position: relative;
+        left: -10px;
+
+
+    }
+
+    th,
+    td {
+        border: 1px solid gray;
+        padding: 9px;
+        text-align: left;
+    }
+
+    th {
+        font-size: 15px;
+    }
+
+    td {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (min-width: 993px) and (max-width: 1603px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .event-h1{
+        display: flex;
+    }
+    .event-h1 h1 {
+        position: absolute;
+        top: 150px;
+        left: 550px;
+        font-size: 50px;
+    }
+
+
+}

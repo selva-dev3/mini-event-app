@@ -1,0 +1,407 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    background: linear-gradient(135deg, #8A3FFC, #1E3C72);
+    width: 100%;
+    height: 100vh;
+}
+
+.left {
+
+    background: linear-gradient(135deg, #8A3FFC, #1E3C72);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    width: 570px;
+    height: 520px;
+    border-radius: 30px 0px 0px 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+}
+
+.left img {
+    width: 250px;
+}
+
+.check{
+    color: red;
+    font-weight: lighter;
+    font-size:15px;
+    position: relative;
+    top: -40px;
+    left: -30px;
+}
+
+.right {
+    background-color: white;
+    border-radius: 0px 30px 30px 0px;
+    width: 380px;
+    height: 520px;
+    position: relative;
+    top: 40px;
+
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.welcome {
+    background: linear-gradient(135deg, #8A3FFC, #1E3C72);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    align-items: center;
+    justify-content: center;
+    ;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.welcome h3 {
+    cursor: default;
+    font-weight: 500;
+    color: white;
+}
+
+h2 {
+    margin-top: 100px;
+    color: linear-gradient(135deg, #8A3FFC, #1E3C72);
+    font-weight: 500;
+    margin-left: 70px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    justify-content: center;
+    gap: 14px;
+    flex-direction: column;
+}
+
+form input {
+    width: 220px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #a877f0;
+    padding: 8px 0;
+    outline: none;
+    font-size: 14px;
+}
+
+
+input::placeholder {
+    position: relative;
+    top: 6px;
+    font-size: 18px;
+}
+
+.login-button,
+.signup-button {
+    font-size: large;
+    font-weight: 500;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient(135deg, #8A3FFC, #1E3C72);
+    width: 110px;
+    height: 40px;
+    position: relative;
+    right: 10px;
+    top: -15px;
+    cursor: pointer;
+}
+
+button:hover {
+
+
+    background: linear-gradient(135deg, #5d06e0, #1E3C72);
+}
+
+#right .create{
+    position: relative;
+    top: 45px;
+}
+.create {
+    color: linear-gradient(135deg, #5d06e0, #1E3C72);
+    position: relative;
+    left: 130px;
+    top: 90px;
+    cursor: pointer;
+}
+.login-button{
+    position: relative;
+    top: 20px;
+}
+
+.forgot {
+    color: linear-gradient(135deg, #5d06e0, #1E3C72);
+    position: relative;
+    left: 130px;
+    top: 120px;
+    border: none;
+    border-bottom: 1px solid #a877f0;
+    padding: 8px 0;
+    outline: none;
+    font-size: 14px;
+    width: 100px;
+    cursor: pointer;
+
+}
+
+.create:hover {
+    color: blue;
+}
+
+.forgot:hover {
+    color: rgb(201, 51, 51);
+}
+
+
+.my-toast {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+
+
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 40px;
+        background: linear-gradient(135deg, #8A3FFC, #1E3C72);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+
+        border-radius: 30px 30px 0px 0px;
+
+
+
+
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left p {
+        position: relative;
+        bottom: 4px;
+    }
+
+
+
+    .right {
+        background-color: white;
+        border-radius: 0px 0px 30px 30px;
+        width: 300px;
+        height: 400px;
+        position: relative;
+        top: 77px;
+
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+
+
+    }
+
+
+    .right h2 {
+        margin-top: 90px;
+        color: linear-gradient(135deg, #8A3FFC, #1E3C72);
+        font-weight: 300;
+        font-size: 20px;
+        margin-left: 80px;
+    }
+
+    form input {
+        width: 170px;
+        height: 20px;
+        border: none;
+        border-bottom: 1px solid #a877f0;
+        padding: 8px 0;
+        outline: none;
+        font-size: 14px;
+    }
+
+    #left input {
+        position: relative;
+        bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 30px;
+        justify-content: center;
+        gap: 14px;
+        flex-direction: column;
+    }
+
+    #left h2 {
+        position: relative;
+        right: 10px;
+    }
+
+    input::placeholder {
+        position: relative;
+        top: 6px;
+        font-size: 14px;
+    }
+
+    #left form button {
+        width: 70px;
+        height: 30px;
+        font-weight: lighter;
+        font-size: 13px;
+        position: absolute;
+        top: 90px;
+        right: 120px;
+
+    }
+
+
+    #left .create {
+        position: absolute;
+        top: 290px;
+        left: 100px;
+        font-size: medium;
+    }
+
+    #left .forgot {
+        position: absolute;
+        top: 323px;
+        left: 100px;
+    }
+      .check{
+          font-size:10px;
+    }
+
+    /* buttom SignUp Page */
+
+    #right h2 {
+        position: relative;
+        right: 20px;
+    }
+
+    #right form button {
+        width: 70px;
+        height: 30px;
+        font-weight: lighter;
+        font-size: 13px;
+        position: absolute;
+        top: -35px;
+
+    }
+
+    #right .create {
+        position: relative;
+        top: 5px;
+        left: 80px;
+        font-size: 14px;
+    }
+
+}
+
+/* TABLET VIEW */
+@media (min-width: 601px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .left {
+        width: 300px;
+        height: 500px;
+        position: relative;
+        top: -40px;
+    }
+    .left img{
+        width: 200px;
+    }
+
+    .right {
+        width: 270px;
+        height: 500px;
+        position: relative;
+        top: -40px;
+
+    }
+    .right h2{
+        margin-top: 140px;
+        margin-left: 10px;
+    }
+    #right form{
+        position: relative;
+        top: 50px;
+    }
+
+    
+    form input {
+        width: 190px;
+        height: 20px;
+        border: none;
+        border-bottom: 1px solid #a877f0;
+        padding: 8px 0;
+        outline: none;
+        font-size: 14px;
+    }
+       input::placeholder {
+        position: relative;
+        top: 6px;
+        font-size: 16px;
+    }
+    #right .signup-button{
+        position: relative;
+        top: -10px;
+        width: 90px;
+        height: 34px;
+        font-size: medium;
+        font-weight:lighter;
+    }
+    #right .create{
+        position: relative;
+        left: 70px;
+        top: 60px;
+    }
+    #right h2{
+        margin-top: 100px;
+        position: relative;
+        left: 30px;
+    
+    }
+    .check{
+          font-size:12px;
+    }
+    #left h2{
+        margin-top: 100px;
+        position: relative;
+        left: 30px;
+    }
+    #left .login-button{
+        width: 90px;
+        height: 34px;
+        font-size: medium;
+        font-weight:lighter;
+    }
+    #left .create,#left .forgot{
+        position: relative;
+        left: 70px;
+    }
+}
