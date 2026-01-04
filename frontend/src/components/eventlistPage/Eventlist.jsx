@@ -69,7 +69,7 @@ function Eventlist() {
     if (!token) return;
     fetchData()
 
-  }, [token,deleteData])
+  }, [])
   return (
     <div className='container'>
       <div className='logout'>

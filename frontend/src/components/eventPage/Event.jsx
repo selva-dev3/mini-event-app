@@ -126,7 +126,7 @@ function Event() {
         setEventId(locationState.state.eventId)
         fetchData(e)
         if (!updateEvent) return;
-    }, [eventId])
+    }, [])
     return (
 
 
