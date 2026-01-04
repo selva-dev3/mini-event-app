@@ -4,6 +4,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { tokenContext } from '../../contexts/tokenContexts';
+import {profile} from '../../assets/profile.png'
+
 
 
 function Login() {
@@ -97,7 +99,7 @@ function Login() {
         return (
             <div className='container'>
                 <div className='left'>
-                    <img src="../../public/images/4140048.png" alt="" /><br />
+                    <img src={profile} alt="" /><br />
                     <p>👤 Create your account</p>
 
                     <p>✨ Join us in seconds</p>
