@@ -94,6 +94,7 @@ function Login() {
             } else {
                 setCheck(false)
             }
+            console.log(url)
         }, [repassword])
         return (
             <div className='container'>
