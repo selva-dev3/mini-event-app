@@ -30,6 +30,7 @@ function Login() {
         setName('');
         setEmail('');
         setPassword('');
+        setRePassword('');
     }
 
 
