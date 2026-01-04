@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './login.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { tokenContext } from '../../contexts/tokenContexts';
 
 
 function Login() {
@@ -14,6 +15,7 @@ function Login() {
     const [repassword, setRePassword] = useState('');
     const navigate = useNavigate();
     const [check, setCheck] = useState(false);
+    const {url} = useContext(tokenContext)
 
     const signupData = {
         name,
@@ -40,7 +42,7 @@ function Login() {
         try {
             if (type === 'signup') {
                 if (!check) {
-                    const res = await axios.post('http://localhost:4000/api/auth/signup', signupData)
+                    const res = await axios.post(`${url}/api/auth/signup`, signupData)
 
                     const data = res.data;
                     if (!data.success) {
@@ -63,7 +65,7 @@ function Login() {
                 }
 
                 if (type === 'login') {
-                    const res = await axios.post('http://localhost:4000/api/auth/login', loginData)
+                    const res = await axios.post(`${url}/api/auth/login`, loginData)
                     const data = res.data;
 
                     if (!data.success) {
