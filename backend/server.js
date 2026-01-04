@@ -9,7 +9,10 @@ const app = express();
 const port = process.env.PORT ||  4000;
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+  origin: 'https://mini-event-app-vudw.vercel.app/',
+  credentials: true,
+}))
 
 // DB Connection
 connectDB();
