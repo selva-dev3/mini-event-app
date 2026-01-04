@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const authMiddlewere = async(req,res,next)=>{
-    const token = req.headers.token;
+    const {token} = req.headers;
     if(!token){
          return res.json({success: false , message: "Not Authorized Login Again"})
     }
