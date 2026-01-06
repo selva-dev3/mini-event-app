@@ -13,14 +13,14 @@
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
-.table-container .add-event{
+.table-container .add-event {
     position: relative;
-     width: 100px;
-     left: 400px;
-     top: 30px;
+    width: 100px;
+    left: 400px;
+    top: 30px;
     height: 40px;
     border-radius: 50px;
     background: linear-gradient(135deg, #0c2eec, #3a3dfa);
@@ -30,10 +30,12 @@ ul {
     font-size: 15px;
     font-weight: bolder;
 }
-.table-container .add-event:hover{
+
+.table-container .add-event:hover {
     background: linear-gradient(135deg, #8A3FFC, #1E3C72);
 
 }
+
 .event-h1 h1 {
     position: absolute;
     top: 200px;
@@ -106,44 +108,45 @@ button {
 }
 
 
-@media (max-width: 603px) {
+@media (max-width: 658px) {
     ::-webkit-scrollbar {
         display: none;
     }
-   .table-container .add-event {
-    position: relative;
-    left: 70px;
-     width: 70px;
-    height: 30px;
-    font-size: 10px;
-    font-weight: lighter    ;
-    border-radius: 50px
 
-   }
 
     .event-h1 h1 {
         position: absolute;
-        top: 100px;
-        left: 100px;
-        font-size: 30px;
-    }
-
-    .table-container {
-        position: absolute;
         top: 200px;
-        width: 220px;
+        left: 200px;
+        font-size: 40px;
     }
 
     .container table {
-        width: 220px;
+        width: 260px;
         background: linear-gradient(135deg, #8A3FFC, #1E3C72);
         color: white;
         font-size: 12px;
         border-collapse: collapse;
         border: #010003 2px solid;
         position: relative;
-        left: -150px;
+        left: -10px;
 
+
+    }
+
+    th,
+    td {
+        border: 1px solid gray;
+        padding: 9px;
+        text-align: left;
+    }
+
+    th {
+        font-size: 15px;
+    }
+
+    td {
+        font-size: 15px;
     }
 
     th,
@@ -177,7 +180,7 @@ button {
 
 }
 
-@media (min-width: 603px) and (max-width: 992px) {
+@media (min-width: 658px) and (max-width: 992px) {
     ::-webkit-scrollbar {
         display: none;
     }
@@ -225,9 +228,10 @@ button {
         display: none;
     }
 
-    .event-h1{
+    .event-h1 {
         display: flex;
     }
+
     .event-h1 h1 {
         position: absolute;
         top: 150px;
